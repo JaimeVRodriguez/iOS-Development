@@ -12,6 +12,7 @@ struct LearnSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(AppState())
         }
     }
 }
