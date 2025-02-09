@@ -18,7 +18,7 @@ enum APIEndpoint {
         case .coordinatesByLocationName(let city):
             return "/geo/1.0/direct?q=\(city)&appid=\(Constants.Keys.weatherApiKey)"
         case .weatherByLatLon(let lat, let lon):
-            return "/data/3.0/onecall?lat=\(lat)&lon=\(lon)&appid=\(Constants.Keys.weatherApiKey)"
+            return"/data/2.5/weather?lat=\(lat)&lon=\(lon)&appid=\(Constants.Keys.weatherApiKey)"
         }
     }
     
